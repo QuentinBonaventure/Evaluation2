@@ -14,6 +14,9 @@
 		E45FA49728B4ED5000D4CA63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E45FA49628B4ED5000D4CA63 /* Assets.xcassets */; };
 		E45FA49A28B4ED5000D4CA63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45FA49828B4ED5000D4CA63 /* LaunchScreen.storyboard */; };
 		E45FA4A228B502E500D4CA63 /* ConnexionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45FA4A128B502E500D4CA63 /* ConnexionViewController.swift */; };
+		E45FA4A428B5120400D4CA63 /* TabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45FA4A328B5120400D4CA63 /* TabBarControllerViewController.swift */; };
+		E45FA4A628B5123C00D4CA63 /* PokemonNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45FA4A528B5123C00D4CA63 /* PokemonNavigationController.swift */; };
+		E45FA4A828B513BB00D4CA63 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45FA4A728B513BB00D4CA63 /* PokemonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		E45FA49928B4ED5000D4CA63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E45FA49B28B4ED5000D4CA63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E45FA4A128B502E500D4CA63 /* ConnexionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnexionViewController.swift; sourceTree = "<group>"; };
+		E45FA4A328B5120400D4CA63 /* TabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerViewController.swift; sourceTree = "<group>"; };
+		E45FA4A528B5123C00D4CA63 /* PokemonNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonNavigationController.swift; sourceTree = "<group>"; };
+		E45FA4A728B513BB00D4CA63 /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +68,10 @@
 				E45FA48F28B4ED5000D4CA63 /* SceneDelegate.swift */,
 				E45FA49128B4ED5000D4CA63 /* LoginViewController.swift */,
 				E45FA4A128B502E500D4CA63 /* ConnexionViewController.swift */,
+				E45FA4A728B513BB00D4CA63 /* PokemonViewController.swift */,
+				E45FA4A328B5120400D4CA63 /* TabBarControllerViewController.swift */,
 				E45FA49328B4ED5000D4CA63 /* Main.storyboard */,
+				E45FA4A528B5123C00D4CA63 /* PokemonNavigationController.swift */,
 				E45FA49628B4ED5000D4CA63 /* Assets.xcassets */,
 				E45FA49828B4ED5000D4CA63 /* LaunchScreen.storyboard */,
 				E45FA49B28B4ED5000D4CA63 /* Info.plist */,
@@ -143,8 +152,11 @@
 			files = (
 				E45FA4A228B502E500D4CA63 /* ConnexionViewController.swift in Sources */,
 				E45FA49228B4ED5000D4CA63 /* LoginViewController.swift in Sources */,
+				E45FA4A428B5120400D4CA63 /* TabBarControllerViewController.swift in Sources */,
+				E45FA4A828B513BB00D4CA63 /* PokemonViewController.swift in Sources */,
 				E45FA48E28B4ED5000D4CA63 /* AppDelegate.swift in Sources */,
 				E45FA49028B4ED5000D4CA63 /* SceneDelegate.swift in Sources */,
+				E45FA4A628B5123C00D4CA63 /* PokemonNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -89,12 +90,12 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mxa-lz-Vmb">
                                 <rect key="frame" x="30" y="334" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rln-Bq-vzN">
                                 <rect key="frame" x="30" y="388" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onE-li-Stw">
                                 <rect key="frame" x="30" y="791" width="354" height="31"/>
@@ -106,6 +107,9 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="show:" destination="BQC-QI-nuq" eventType="touchUpInside" id="bQo-of-B7f"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Hm-cr-JyM">
                                 <rect key="frame" x="346" y="5" width="67" height="31"/>
@@ -139,18 +143,113 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="connectButton" destination="onE-li-Stw" id="EEJ-zj-1mv"/>
                         <outlet property="headerImage" destination="wfX-kB-lrs" id="XDV-qe-u61"/>
+                        <outlet property="loginTextField" destination="mxa-lz-Vmb" id="ca4-YY-oGH"/>
+                        <outlet property="passwordTextField" destination="Rln-Bq-vzN" id="IrB-iv-SGJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tZA-B3-n0j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="824.63768115942037" y="97.767857142857139"/>
+            <point key="canvasLocation" x="775" y="98"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="Koh-tR-8pz">
+            <objects>
+                <viewController id="wfr-VR-RNc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SqR-YN-Vzd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Gv-kS-f8q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="tKo-Sn-qgg"/>
+                    <navigationItem key="navigationItem" id="y2H-m1-ane"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mth-Ed-KBH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3861" y="392"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Spc-Fn-OK2">
+            <objects>
+                <navigationController storyboardIdentifier="PokemonNavigationController" id="rmt-gm-hpH" customClass="PokemonNavigationController" customModule="EVIOS2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="4i6-4A-3Cu"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="W2P-Bo-x2G">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wTU-us-SLC" kind="relationship" relationship="rootViewController" id="WFI-wK-rta"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EXm-1G-Beh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2512" y="-522"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="stz-M3-gMp">
+            <objects>
+                <viewController storyboardIdentifier="PokemonViewController" id="wTU-us-SLC" customClass="PokemonViewController" customModule="EVIOS2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MU6-uK-Jxj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="LP6-HI-Wc2"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="Ybw-A2-bgs"/>
+                    <navigationItem key="navigationItem" id="tN2-xg-OlX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qN9-sf-y3h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3738" y="-522"/>
+        </scene>
+        <!--Tab Bar Controller View Controller-->
+        <scene sceneID="bfv-x0-tee">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarControllerViewController" id="5kz-5U-cPm" customClass="TabBarControllerViewController" customModule="EVIOS2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="E9m-jB-h1M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="rmt-gm-hpH" kind="relationship" relationship="viewControllers" id="6ua-s3-gvC"/>
+                        <segue destination="EJi-hW-PIA" kind="relationship" relationship="viewControllers" id="8rB-kc-l2X"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6a-jR-yz0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1543" y="98"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="BIG-i2-U0l">
+            <objects>
+                <navigationController id="EJi-hW-PIA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="jH1-HH-CbU"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2VI-DI-Kvx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wfr-VR-RNc" kind="relationship" relationship="rootViewController" id="M5M-Ag-KSY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lt2-Ji-3H2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2512" y="392"/>
         </scene>
     </scenes>
     <resources>
         <image name="facebook_ico" width="55" height="55"/>
         <image name="google_ico" width="55" height="55"/>
         <image name="header_pokemon" width="711" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
