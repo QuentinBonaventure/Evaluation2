@@ -194,11 +194,26 @@
                     <view key="view" contentMode="scaleToFill" id="MU6-uK-Jxj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KHg-oF-nqC">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="LP6-HI-Wc2"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LP6-HI-Wc2" firstAttribute="trailing" secondItem="KHg-oF-nqC" secondAttribute="trailing" id="2ty-EC-cHj"/>
+                            <constraint firstItem="LP6-HI-Wc2" firstAttribute="bottom" secondItem="KHg-oF-nqC" secondAttribute="bottom" id="LyS-Lb-UTb"/>
+                            <constraint firstItem="KHg-oF-nqC" firstAttribute="top" secondItem="LP6-HI-Wc2" secondAttribute="top" id="dIZ-fW-6Fc"/>
+                            <constraint firstItem="KHg-oF-nqC" firstAttribute="leading" secondItem="LP6-HI-Wc2" secondAttribute="leading" id="hGl-qy-w9i"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="Ybw-A2-bgs"/>
                     <navigationItem key="navigationItem" id="tN2-xg-OlX"/>
+                    <connections>
+                        <outlet property="pokemonTableView" destination="KHg-oF-nqC" id="Ys2-4T-js9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qN9-sf-y3h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
