@@ -1,24 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="EVIOS2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="Crp-Pm-Wun">
+                                <rect key="frame" x="0.0" y="64" width="414" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="THM-Ha-AIc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connexion via" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vQ-Z7-YMj">
+                                <rect key="frame" x="0.0" y="212" width="414" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6d7-Ce-Afm">
+                                <rect key="frame" x="50" y="276" width="314" height="69"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="google_ico" title="Google">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="toGoogleView" destination="BYZ-38-t0r" eventType="touchUpInside" id="K4V-ev-UiQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Sj-lW-aU3">
+                                <rect key="frame" x="50" y="395" width="314" height="69"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="facebook_ico" title="Facebook"/>
+                                <connections>
+                                    <action selector="toFacebookView" destination="BYZ-38-t0r" eventType="touchUpInside" id="06c-sO-U5a"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6d7-Ce-Afm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Cl4-z3-XGl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6vQ-Z7-YMj" secondAttribute="trailing" id="FtT-ri-Y0M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Sj-lW-aU3" secondAttribute="trailing" constant="50" id="GRk-4V-xG1"/>
+                            <constraint firstItem="3Sj-lW-aU3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Gzb-y9-zip"/>
+                            <constraint firstItem="6d7-Ce-Afm" firstAttribute="top" secondItem="6vQ-Z7-YMj" secondAttribute="bottom" constant="40" id="HJE-GG-dkn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Crp-Pm-Wun" secondAttribute="trailing" id="JTx-li-Gye"/>
+                            <constraint firstItem="6vQ-Z7-YMj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YsQ-Ap-464"/>
+                            <constraint firstItem="6vQ-Z7-YMj" firstAttribute="top" secondItem="Crp-Pm-Wun" secondAttribute="bottom" constant="20" id="bPK-uI-QFP"/>
+                            <constraint firstItem="Crp-Pm-Wun" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="bnt-nx-zc6"/>
+                            <constraint firstItem="3Sj-lW-aU3" firstAttribute="top" secondItem="6d7-Ce-Afm" secondAttribute="bottom" constant="50" id="e0v-Tv-8ky"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6d7-Ce-Afm" secondAttribute="trailing" constant="50" id="fPI-km-Mkl"/>
+                            <constraint firstItem="Crp-Pm-Wun" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hvI-ob-Scw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="facebookButton" destination="3Sj-lW-aU3" id="qlg-Ue-udH"/>
+                        <outlet property="googleButton" destination="6d7-Ce-Afm" id="xzf-5j-DTA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="20" y="98"/>
+        </scene>
+        <!--Connexion View Controller-->
+        <scene sceneID="852-XY-vJ3">
+            <objects>
+                <viewController storyboardIdentifier="loginPage" id="BQC-QI-nuq" customClass="ConnexionViewController" customModule="EVIOS2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="npw-zt-Kww">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wfX-kB-lrs">
+                                <rect key="frame" x="10" y="54" width="394" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="Xte-n6-c4D"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mxa-lz-Vmb">
+                                <rect key="frame" x="30" y="334" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rln-Bq-vzN">
+                                <rect key="frame" x="30" y="388" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onE-li-Stw">
+                                <rect key="frame" x="30" y="791" width="354" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Connection">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <color key="strokeColor" systemColor="systemYellowColor"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Hm-cr-JyM">
+                                <rect key="frame" x="346" y="5" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="closeButton:" destination="BQC-QI-nuq" eventType="touchUpInside" id="enq-6X-57q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="U4t-E4-phR"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5Hm-cr-JyM" secondAttribute="trailing" constant="1" id="1Yp-ra-pLX"/>
+                            <constraint firstItem="Rln-Bq-vzN" firstAttribute="centerX" secondItem="npw-zt-Kww" secondAttribute="centerX" id="A0e-dt-3E2"/>
+                            <constraint firstItem="U4t-E4-phR" firstAttribute="trailing" secondItem="Rln-Bq-vzN" secondAttribute="trailing" constant="30" id="E4c-Ja-dDD"/>
+                            <constraint firstItem="mxa-lz-Vmb" firstAttribute="centerX" secondItem="npw-zt-Kww" secondAttribute="centerX" id="KHD-SM-smD"/>
+                            <constraint firstItem="U4t-E4-phR" firstAttribute="trailing" secondItem="onE-li-Stw" secondAttribute="trailing" constant="30" id="Lmd-XL-Mdg"/>
+                            <constraint firstItem="U4t-E4-phR" firstAttribute="bottom" secondItem="onE-li-Stw" secondAttribute="bottom" constant="40" id="Mv2-YL-Ywh"/>
+                            <constraint firstItem="Rln-Bq-vzN" firstAttribute="leading" secondItem="U4t-E4-phR" secondAttribute="leading" constant="30" id="S04-H0-ONt"/>
+                            <constraint firstItem="wfX-kB-lrs" firstAttribute="top" secondItem="U4t-E4-phR" secondAttribute="top" constant="10" id="Uf7-6t-G95"/>
+                            <constraint firstItem="U4t-E4-phR" firstAttribute="trailing" secondItem="mxa-lz-Vmb" secondAttribute="trailing" constant="30" id="Zqa-Hh-TRT"/>
+                            <constraint firstItem="Rln-Bq-vzN" firstAttribute="top" secondItem="mxa-lz-Vmb" secondAttribute="bottom" constant="20" id="dFb-bT-GHI"/>
+                            <constraint firstItem="5Hm-cr-JyM" firstAttribute="top" secondItem="npw-zt-Kww" secondAttribute="top" constant="5" id="ffR-u5-dD5"/>
+                            <constraint firstItem="mxa-lz-Vmb" firstAttribute="leading" secondItem="U4t-E4-phR" secondAttribute="leading" constant="30" id="iJQ-96-bMh"/>
+                            <constraint firstItem="onE-li-Stw" firstAttribute="centerX" secondItem="npw-zt-Kww" secondAttribute="centerX" id="kGv-Bf-gZA"/>
+                            <constraint firstItem="onE-li-Stw" firstAttribute="leading" secondItem="U4t-E4-phR" secondAttribute="leading" constant="30" id="lEd-4V-oo2"/>
+                            <constraint firstItem="mxa-lz-Vmb" firstAttribute="top" secondItem="wfX-kB-lrs" secondAttribute="bottom" constant="40" id="lbG-z8-raT"/>
+                            <constraint firstItem="wfX-kB-lrs" firstAttribute="leading" secondItem="U4t-E4-phR" secondAttribute="leading" constant="10" id="odA-w1-RDD"/>
+                            <constraint firstItem="U4t-E4-phR" firstAttribute="trailing" secondItem="wfX-kB-lrs" secondAttribute="trailing" constant="10" id="wt9-Ao-D6O"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="headerImage" destination="wfX-kB-lrs" id="XDV-qe-u61"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tZA-B3-n0j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824.63768115942037" y="97.767857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="facebook_ico" width="55" height="55"/>
+        <image name="google_ico" width="55" height="55"/>
+        <image name="header_pokemon" width="711" height="256"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

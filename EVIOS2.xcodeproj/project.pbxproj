@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		E45FA48E28B4ED5000D4CA63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45FA48D28B4ED5000D4CA63 /* AppDelegate.swift */; };
 		E45FA49028B4ED5000D4CA63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45FA48F28B4ED5000D4CA63 /* SceneDelegate.swift */; };
-		E45FA49228B4ED5000D4CA63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45FA49128B4ED5000D4CA63 /* ViewController.swift */; };
+		E45FA49228B4ED5000D4CA63 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45FA49128B4ED5000D4CA63 /* LoginViewController.swift */; };
 		E45FA49528B4ED5000D4CA63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45FA49328B4ED5000D4CA63 /* Main.storyboard */; };
 		E45FA49728B4ED5000D4CA63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E45FA49628B4ED5000D4CA63 /* Assets.xcassets */; };
 		E45FA49A28B4ED5000D4CA63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45FA49828B4ED5000D4CA63 /* LaunchScreen.storyboard */; };
+		E45FA4A228B502E500D4CA63 /* ConnexionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45FA4A128B502E500D4CA63 /* ConnexionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E45FA48A28B4ED5000D4CA63 /* EVIOS2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EVIOS2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45FA48D28B4ED5000D4CA63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E45FA48F28B4ED5000D4CA63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E45FA49128B4ED5000D4CA63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E45FA49128B4ED5000D4CA63 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E45FA49428B4ED5000D4CA63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E45FA49628B4ED5000D4CA63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E45FA49928B4ED5000D4CA63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E45FA49B28B4ED5000D4CA63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E45FA4A128B502E500D4CA63 /* ConnexionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnexionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				E45FA48D28B4ED5000D4CA63 /* AppDelegate.swift */,
 				E45FA48F28B4ED5000D4CA63 /* SceneDelegate.swift */,
-				E45FA49128B4ED5000D4CA63 /* ViewController.swift */,
+				E45FA49128B4ED5000D4CA63 /* LoginViewController.swift */,
+				E45FA4A128B502E500D4CA63 /* ConnexionViewController.swift */,
 				E45FA49328B4ED5000D4CA63 /* Main.storyboard */,
 				E45FA49628B4ED5000D4CA63 /* Assets.xcassets */,
 				E45FA49828B4ED5000D4CA63 /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E45FA49228B4ED5000D4CA63 /* ViewController.swift in Sources */,
+				E45FA4A228B502E500D4CA63 /* ConnexionViewController.swift in Sources */,
+				E45FA49228B4ED5000D4CA63 /* LoginViewController.swift in Sources */,
 				E45FA48E28B4ED5000D4CA63 /* AppDelegate.swift in Sources */,
 				E45FA49028B4ED5000D4CA63 /* SceneDelegate.swift in Sources */,
 			);
