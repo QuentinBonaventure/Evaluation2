@@ -156,7 +156,7 @@
         <!--Item 2-->
         <scene sceneID="Koh-tR-8pz">
             <objects>
-                <viewController id="wfr-VR-RNc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PickerViewController" id="wfr-VR-RNc" customClass="PickerViewController" customModule="EVIOS2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SqR-YN-Vzd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,11 +170,11 @@
             </objects>
             <point key="canvasLocation" x="3861" y="392"/>
         </scene>
-        <!--Item-->
+        <!--Pokemon-->
         <scene sceneID="Spc-Fn-OK2">
             <objects>
                 <navigationController storyboardIdentifier="PokemonNavigationController" id="rmt-gm-hpH" customClass="PokemonNavigationController" customModule="EVIOS2" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="4i6-4A-3Cu"/>
+                    <tabBarItem key="tabBarItem" title="Pokemon" image="pokemon_ico" id="4i6-4A-3Cu"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="W2P-Bo-x2G">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -195,7 +195,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="LP6-HI-Wc2"/>
-                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="Ybw-A2-bgs"/>
                     <navigationItem key="navigationItem" id="tN2-xg-OlX"/>
@@ -222,11 +222,11 @@
             </objects>
             <point key="canvasLocation" x="1543" y="98"/>
         </scene>
-        <!--Item-->
+        <!--Picker-->
         <scene sceneID="BIG-i2-U0l">
             <objects>
-                <navigationController id="EJi-hW-PIA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="jH1-HH-CbU"/>
+                <navigationController storyboardIdentifier="PickerNavigationController" id="EJi-hW-PIA" customClass="PickerNavigationController" customModule="EVIOS2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Picker" image="picker_ico" id="jH1-HH-CbU"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2VI-DI-Kvx">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -244,11 +244,10 @@
         <image name="facebook_ico" width="55" height="55"/>
         <image name="google_ico" width="55" height="55"/>
         <image name="header_pokemon" width="711" height="256"/>
+        <image name="picker_ico" width="25" height="25"/>
+        <image name="pokemon_ico" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -17,6 +17,8 @@
 		E45FA4A428B5120400D4CA63 /* TabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45FA4A328B5120400D4CA63 /* TabBarControllerViewController.swift */; };
 		E45FA4A628B5123C00D4CA63 /* PokemonNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45FA4A528B5123C00D4CA63 /* PokemonNavigationController.swift */; };
 		E45FA4A828B513BB00D4CA63 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45FA4A728B513BB00D4CA63 /* PokemonViewController.swift */; };
+		E45FA4AC28B5185300D4CA63 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45FA4AB28B5185300D4CA63 /* PickerViewController.swift */; };
+		E45FA4AE28B5187E00D4CA63 /* PickerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45FA4AD28B5187E00D4CA63 /* PickerNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		E45FA4A328B5120400D4CA63 /* TabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerViewController.swift; sourceTree = "<group>"; };
 		E45FA4A528B5123C00D4CA63 /* PokemonNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonNavigationController.swift; sourceTree = "<group>"; };
 		E45FA4A728B513BB00D4CA63 /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
+		E45FA4AB28B5185300D4CA63 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		E45FA4AD28B5187E00D4CA63 /* PickerNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				E45FA4A328B5120400D4CA63 /* TabBarControllerViewController.swift */,
 				E45FA49328B4ED5000D4CA63 /* Main.storyboard */,
 				E45FA4A528B5123C00D4CA63 /* PokemonNavigationController.swift */,
+				E45FA4AB28B5185300D4CA63 /* PickerViewController.swift */,
+				E45FA4AD28B5187E00D4CA63 /* PickerNavigationController.swift */,
 				E45FA49628B4ED5000D4CA63 /* Assets.xcassets */,
 				E45FA49828B4ED5000D4CA63 /* LaunchScreen.storyboard */,
 				E45FA49B28B4ED5000D4CA63 /* Info.plist */,
@@ -152,6 +158,8 @@
 			files = (
 				E45FA4A228B502E500D4CA63 /* ConnexionViewController.swift in Sources */,
 				E45FA49228B4ED5000D4CA63 /* LoginViewController.swift in Sources */,
+				E45FA4AC28B5185300D4CA63 /* PickerViewController.swift in Sources */,
+				E45FA4AE28B5187E00D4CA63 /* PickerNavigationController.swift in Sources */,
 				E45FA4A428B5120400D4CA63 /* TabBarControllerViewController.swift in Sources */,
 				E45FA4A828B513BB00D4CA63 /* PokemonViewController.swift in Sources */,
 				E45FA48E28B4ED5000D4CA63 /* AppDelegate.swift in Sources */,
