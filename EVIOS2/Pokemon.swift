@@ -29,3 +29,8 @@ enum PokemonType: String {
     case poison = " Poison"
     
 }
+
+struct Color{
+    var colorName: String
+    var backGroundColor: UIColor
+}

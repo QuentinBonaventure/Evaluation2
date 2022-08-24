@@ -50,6 +50,7 @@ class ConnexionViewController: UIViewController {
         loginTextField.delegate = self
         #if DEBUG
         loginTextField.text = "bonasdfsdf@gmail.com"
+        passwordTextField.text = "123456789"
         #endif
     }
     

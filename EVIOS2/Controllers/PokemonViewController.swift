@@ -17,12 +17,14 @@ class PokemonViewController: UIViewController {
         pokemonTableView.register(UINib(nibName: PokemonCell.identifier, bundle: .main), forCellReuseIdentifier: PokemonCell.identifier)
         loadPokemon()
         pokemonTableView.dataSource = self
+        pokemonTableView.delegate = self
+        
+      
         
         
     }
     
     func loadPokemon(){
-        
         
         pokemons.append(Pokemon(name: "Bulbizarre", type: .grass, generation: 1, image: UIImage(named: "Bulbizarre"), pokedex: 2, height: 102))
         pokemons.append(Pokemon(name: "Carapuce",type: .water,generation: 1, image: UIImage(named: "Carapuce"), pokedex: 4, height: 59))
@@ -32,16 +34,7 @@ class PokemonViewController: UIViewController {
         pokemons.append(Pokemon(name: "Reptincel",type: .fire, generation: 1, image: UIImage(named: "Reptincel"), pokedex: 8, height: 125))
         
         
-        
-        
-        
-        
     }
-    
-   
-    
-
-    
 
 }
 
@@ -67,4 +60,22 @@ extension PokemonViewController: UITableViewDataSource{
     
     
     
+}
+extension PokemonViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        170
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if  let detailsViewController = storyboard?.instantiateViewController(withIdentifier: "DetailsViewController")as? DetailsViewController{
+            detailsViewController.pokemon = pokemons[indexPath.row]
+            navigationController?.pushViewController(detailsViewController, animated: true)
+           
+        }
+                else {
+            fatalError("Unable to instantiate pokemon details")
+        }
+            
+        
+    }
 }
