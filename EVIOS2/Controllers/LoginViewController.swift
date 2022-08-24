@@ -24,15 +24,7 @@ class LoginViewController: UIViewController {
            loginPage.image = "google_header"
            present(loginPage, animated: true, completion : nil)
         }
-        
-        
-        
-        
-        
-        
-        
-//        facebookImage.image = UIImage(named: imageHeader)
-//        if let googleViewController = storyboard?.instantiateViewController(withIdentifier: <#T##String#>)
+
         
     }
     
@@ -43,12 +35,7 @@ class LoginViewController: UIViewController {
             present(loginPage, animated: true, completion : nil)
             
          }
-       
-       
-        
-        
-       
-        
+  
     }
     override func viewDidLoad() {
         super.viewDidLoad()

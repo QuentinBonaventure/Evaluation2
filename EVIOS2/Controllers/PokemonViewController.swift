@@ -18,10 +18,7 @@ class PokemonViewController: UIViewController {
         loadPokemon()
         pokemonTableView.dataSource = self
         pokemonTableView.delegate = self
-        
-      
-        
-        
+   
     }
     
     func loadPokemon(){

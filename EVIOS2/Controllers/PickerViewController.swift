@@ -13,7 +13,7 @@ class PickerViewController: UIViewController {
     @IBOutlet weak var imagePokemon: UIImageView!
     @IBOutlet weak var pickerView: UIPickerView!
     @IBAction func  didTapMoreInfos(){
-        if let url = URL(string: "https://google.fr"){
+        if let url = URL(string: NSLocalizedString("web_adress", comment: "") ){
         let vc = SFSafariViewController(url: url)
             present(vc, animated: true)
         }
@@ -65,12 +65,6 @@ class PickerViewController: UIViewController {
                 pickerView.isHidden = true
             }
         }
-    
-    
-
-    
-
- 
 
 }
 
@@ -102,18 +96,6 @@ extension PickerViewController: UIPickerViewDataSource, UIPickerViewDelegate{
         }
     }
 
-
-    /*func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        switch component {
-        case 0:
-            return pokemons[row].name
-        case 1:
-            return color[row].colorName
-        default:
-           return ""
-        }
-    }
-    */
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
 
         switch component {
@@ -125,7 +107,7 @@ extension PickerViewController: UIPickerViewDataSource, UIPickerViewDelegate{
             return
         }
 
-        }
+    }
     override func viewDidAppear(_ animated: Bool) {
         imagePokemon.backgroundColor = .red
         imagePokemon.image = pokemons[0].image
