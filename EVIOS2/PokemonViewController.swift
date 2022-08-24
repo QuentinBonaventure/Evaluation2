@@ -16,36 +16,40 @@ class PokemonViewController: UIViewController {
         super.viewDidLoad()
         pokemonTableView.register(UINib(nibName: PokemonCell.identifier, bundle: .main), forCellReuseIdentifier: PokemonCell.identifier)
         loadPokemon()
-        // Do any additional setup after loading the view.
+        pokemonTableView.dataSource = self
+        
+        
     }
     
     func loadPokemon(){
-        pokemons.append(Pokemon(name: "Bulbizarre", image: UIImage(named: "Bulbizarre")))
-        pokemons.append(Pokemon(name: "Carapuce", image: UIImage(named: "Carapuce")))
-        pokemons.append(Pokemon(name: "Dracaufeu", image: UIImage(named: "Dracaufeu")))
-        pokemons.append(Pokemon(name: "Florizarre", image: UIImage(named: "Florizarre")))
-        pokemons.append(Pokemon(name: "Herbizarre", image: UIImage(named: "Herbizarre")))
-        pokemons.append(Pokemon(name: "Reptincel", image: UIImage(named: "Reptincel")))
+        
+        
+        pokemons.append(Pokemon(name: "Bulbizarre", type: .grass, generation: 1, image: UIImage(named: "Bulbizarre"), pokedex: 2, height: 102))
+        pokemons.append(Pokemon(name: "Carapuce",type: .water,generation: 1, image: UIImage(named: "Carapuce"), pokedex: 4, height: 59))
+        pokemons.append(Pokemon(name: "Dracaufeu",type: .fire, generation: 1, image: UIImage(named: "Dracaufeu"), pokedex: 9, height: 150 ))
+        pokemons.append(Pokemon(name: "Florizarre",type: .poison, generation: 2, image: UIImage(named: "Florizarre"), pokedex: 4, height: 120))
+        pokemons.append(Pokemon(name: "Herbizarre",type: .grass, generation: 1, image: UIImage(named: "Herbizarre"), pokedex: 6, height: 123))
+        pokemons.append(Pokemon(name: "Reptincel",type: .fire, generation: 1, image: UIImage(named: "Reptincel"), pokedex: 8, height: 125))
+        
+        
         
         
         
         
     }
     
+   
+    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
 
 extension PokemonViewController: UITableViewDataSource{
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        1
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         pokemons.count
     }
@@ -54,11 +58,13 @@ extension PokemonViewController: UITableViewDataSource{
         guard let cell =
                 tableView.dequeueReusableCell(withIdentifier: PokemonCell.identifier, for: indexPath) as? PokemonCell
         else {
-            fatalError("Impossible to retrieve pokemons cell")
+            fatalError("Unable to retrieve pokemons cell")
         }
+       
         cell.setup(pokemon: pokemons[indexPath.row])
         return cell
     }
+    
     
     
 }

@@ -26,7 +26,8 @@ class PokemonCell: UITableViewCell {
     
     func setup(pokemon: Pokemon){
         pokemonName.text = pokemon.name
-        pokemonImage.image = pokemonImage
+        pokemonImage.image = pokemon.image
+        
     }
     
 }

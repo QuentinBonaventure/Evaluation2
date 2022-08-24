@@ -11,5 +11,21 @@ import UIKit
 
 struct Pokemon {
     var name : String
+    var type : PokemonType
+    var generation: Int
     var image : UIImage!
+    var pokedex: Int
+    var height: Int
+    
+    
+}
+
+enum PokemonType: String {
+    case fire = "Fire"
+    case water = "Water"
+    case grass = "Grass"
+    case flying = "Flying"
+    case dragon = "Dragon"
+    case poison = " Poison"
+    
 }
