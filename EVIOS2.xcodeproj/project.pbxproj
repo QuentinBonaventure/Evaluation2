@@ -87,10 +87,18 @@
 				E45FA49628B4ED5000D4CA63 /* Assets.xcassets */,
 				E45FA49828B4ED5000D4CA63 /* LaunchScreen.storyboard */,
 				E45FA49B28B4ED5000D4CA63 /* Info.plist */,
-				E45FA4B328B51C3D00D4CA63 /* Pokemon.swift */,
+				E46A54DA28B642BA00F03CEA /* Models */,
 				E479DEE628B60ADF00F795B9 /* Localizable.strings */,
 			);
 			path = EVIOS2;
+			sourceTree = "<group>";
+		};
+		E46A54DA28B642BA00F03CEA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E45FA4B328B51C3D00D4CA63 /* Pokemon.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		E479DEDE28B5FF0E00F795B9 /* Views */ = {
@@ -146,6 +154,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					E45FA48928B4ED5000D4CA63 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -373,7 +382,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.technifutur.neopxl.EVIOS2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technifutur.neoPixl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -401,7 +410,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.technifutur.neopxl.EVIOS2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technifutur.neoPixl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

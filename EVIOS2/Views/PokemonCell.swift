@@ -30,4 +30,9 @@ class PokemonCell: UITableViewCell {
         
     }
     
+    override func prepareForReuse() {
+        pokemonImage.image = nil
+        pokemonName.text = ""
+    }
+    
 }

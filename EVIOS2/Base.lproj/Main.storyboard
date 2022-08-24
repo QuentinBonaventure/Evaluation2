@@ -309,7 +309,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <color key="backgroundColor" name="Drak"/>
                                 <constraints>
                                     <constraint firstItem="Ynr-2p-Zfb" firstAttribute="leading" secondItem="oEW-8G-AmS" secondAttribute="leading" constant="20" id="08a-Vy-xPY"/>
                                     <constraint firstItem="pYo-DI-ygk" firstAttribute="top" secondItem="oEW-8G-AmS" secondAttribute="top" id="AO6-wK-Xbj"/>
@@ -393,12 +393,12 @@
         <image name="header_pokemon" width="711" height="256"/>
         <image name="picker_ico" width="25" height="25"/>
         <image name="pokemon_ico" width="25" height="25"/>
+        <namedColor name="Drak">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Yellow">
             <color red="1" green="0.88627450980392153" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
